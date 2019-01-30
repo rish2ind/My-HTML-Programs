@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Lists</title>
+      <style>
+          *{
+              margin: 0px;
+              padding: 0px;
+          }
+          nav ul{
+              list-style: none;
+              
+          }
+          nav ul li{
+              background: linear-gradient(to right, #339933 0%, #33cc33 20%);
+              border: 1px solid #fff;
+              width: 120px;
+              height: 35px;
+              text-align: center;
+              line-height: 35px;
+              float: left;
+              position: relative;
+              border-radius: 8px;
+              margin: 2px;
+          }
+          nav ul li a{
+              text-decoration: none;
+              color: #fff;
+              display: block;
+          }
+          nav ul li a:hover{
+              background: linear-gradient(to right, #22aa33 0%, #33ff33 28%);
+              border-radius: 8px;
+          }
+          nav ul ul {
+             position: absolute;
+              display: none;
+          }          
+          nav ul li:hover > ul{
+              display: block;
+          }
+          nav ul ul ul{
+              margin-left: 120px;           
+              top: 0px;
+          }
+        </style>  
+    </head>
+    <body>
+       <nav>
+           <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Country </a>
+                  <ul>
+                   <li><a href="#">India </a>
+                    <ul>
+                        <li><a href="#">India 1</a></li>
+                        <li><a href="#">India 2</a></li>
+                        <li><a href="#">India 3</a></li>
+                        <li><a href="#">India 4</a></li>
+                    </ul>   
+                       </li>
+                   <li><a href="#">Australia</a></li>
+                   <li><a href="#">Afghanistan</a></li>
+                   <li><a href="#">Russia</a></li>
+                   <li><a href="#">Bhutan</a></li>
+               </ul>
+               </li>
+               <li><a href="#">News</a></li>
+               <li><a href="#">More</a></li>
+               <li><a href="#">Contact Us</a></li>
+           </ul>
+       </nav>
+       
+    </body>
+</html>

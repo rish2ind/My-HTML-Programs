@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Media</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #container{
+                width: 960px;
+                margin: 0px auto;
+            }
+            #section{
+                width: 700px;
+                float: left;
+                background-color: blue;
+            }
+            #right-column{
+                width: 260px;
+                float: left;
+                background-color: orange;
+            }
+            @media screen and (max-width: 959px){
+                #container{
+                    width: 100%;
+                }
+                #section{
+                    width: 60%;
+                }
+                #right-column{
+                    width: 40%;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+             @media screen and (max-width: 640px){
+                #section{
+                    width: 100%;
+                }
+                #right-column{
+                    width: 100%;
+                 
+            }
+        </style>
+    </head>
+    <body>
+       <div id="container">
+       <img src="bg.jpg" alt="History" height="200px" width="900px">
+        <section id="section">Hello I'm Rishabh Mathur from India. sjglkj gjeriot jgjgkfjg fdjgioe rgtrj gld; sjgjd giojregjk</section>
+         <aside id="right-column">This is right column, fsfj kljais dgrugu rgtjjg kfjsar</aside>
+          </div>
+           </body>
+</html>

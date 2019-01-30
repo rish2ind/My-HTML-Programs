@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Forms</title>
+         <style>
+             body{
+                 margin: 0px;
+                 padding: 0px;
+                 font-family: sans-serif;
+                 background-image: url("bg.jpg");
+                 background-size: cover;
+             }        
+             .box{
+                 position: absolute;
+                 left: 50%;
+                 top: 50%;
+                 transform: translate(-50%, -50%);
+                 width: 400px;
+                 background-color: rgba(0,0,0,.8);
+                 padding: 40px;
+                 box-sizing: border-box;
+                 box-shadow: 0px 10px 6px rgba(0,0,0,0.5);
+                 border-radius: 5px;
+             }
+             .box h2{
+                 margin: 0px 0 30px;
+                 text-align: center;
+                 padding: 0px;
+                 color: #fff;
+             }
+            .box .inputBox{
+                 position: relative;
+             }
+             .box .inputBox input{
+                 width: 100%;
+                 padding: 10px 0px;
+                 font=size: 16px;
+                 margin-bottom: 30px;
+                 color: #fff;
+                 border: none;
+                 border-bottom: 1px solid #fff;
+                 outline: none;
+                 background: transparent;    
+             }
+             .box .inputBox lables{
+                 position: absolute;
+                 top: 0px;
+                 left: 0px;
+                 padding: 10px 0px;
+                 font=size: 16px;
+                 color: #fff;
+                 pointer-events: none;
+                 transition: .5s;
+             }
+             .box .inputBox input:focus ~ lables,
+             .box .inputBox input:valid ~ lables{
+                 top: -18px;
+                 color: #0693f3;
+                 font-size: 12px;
+             }
+             .box input[type="submit"]{
+                 background: transparent;
+                 padding: 13px 15px;
+                 color: #fff;
+                 background-color: #0693f3; 
+                 border: none;
+                 outline: none;
+                 cursor: pointer;
+                 border-radius: 5px;
+             }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+           <h2>Login</h2>
+            <forms>
+               <div class="inputBox">
+                <input type="text" name="" required="">
+                <lables for="Username">Username</lables>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="" required="">
+                    <lables>Password</lables>
+                </div>
+                <input type="submit" value="submit">
+                
+            </forms>
+        </div>
+    </body>
+</html>

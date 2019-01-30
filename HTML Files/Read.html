@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Read More Concept</title>
+        <style>
+            #more{
+                display: none;
+            }
+            #mores{
+                display: none;
+            }
+            #myBtn{
+                border: none;
+                background-color: #fff;
+                color: #0000ff;
+                cursor: pointer;
+            }
+            #myBtn:hover{
+                color: #ff0000;
+            }
+            #myBtns{
+                border: none;
+                background-color: #fff;
+                color: #0000ff;
+                cursor: pointer;
+            }
+            #myBtns:hover{
+                color: #ff0000;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <p>The Indian subcontinent was home to the urban Indus Valley Civilisation of the 3rd millennium BCE. In the following millennium, the oldest scriptures associated with Hinduism began to be composed. Social stratification, based on caste, emerged in the first millennium BCE, and Buddhism and Jainism arose. Early political <span id="dot">....</span><span id="more"> consolidations took place under the Maurya and Gupta empires; later peninsular Middle Kingdoms influenced cultures as far as Southeast Asia. In the medieval era, Judaism, Zoroastrianism, Christianity, and Islam arrived, and Sikhism emerged, all adding to the region's diverse culture. Much of the north fell to the Delhi Sultanate; the south was united under the Vijayanagara Empire. The economy expanded in the 17th century in the Mughal Empire. In the mid-18th century, the subcontinent came under British East India Company rule, and in the mid-19th under British crown rule. A nationalist movement emerged in the late 19th century, which later, under Mahatma Gandhi, was noted for nonviolent resistance and led to India's independence in 1947.</span></p>
+        <button onclick="myFunction()" id="myBtn">Read More</button><br><br>
+        <p>In 2017, the Indian economy was the world's sixth largest by nominal GDP[19] and third largest by purchasing power parity.[15] Following market-based economic reforms in 1991, India became one of the fastest-growing major economies and is considered a newly industrialised country. However, it continues to face <span id="mores"> the challenges of poverty, corruption, malnutrition, and inadequate public healthcare. A nuclear weapons state and regional power, it has the second largest standing army in the world and ranks fifth in military expenditure among nations. India is a federal republic governed under a parliamentary system and consists of 29 states and 7 union territories. A pluralistic, multilingual and multi-ethnic society, it is also home to a diversity of wildlife in a variety of protected habitats.</span></p>
+        <button onclick="myFunctions()" id="myBtns">Read More</button><br><br>
+        <script>
+            function myFunction(){
+                var x = document.getElementById('more');
+                var y = document.getElementById('myBtn');
+                var z = document.getElementById('dot');
+                if(x.style.display === 'none'){
+                    x.style.display = 'inline';
+                    y.innerHTML = 'Read Less';
+                    z.style.display = 'none';
+                }
+                else{
+                    x.style.display = 'none';   
+                    y.innerHTML = 'Read More';
+                    z.style.display = 'inline';
+                }
+            }
+             function myFunctions(){
+                var x = document.getElementById('mores');
+                 var y = document.getElementById('myBtns');
+                if(x.style.display === 'none'){
+                    x.style.display = 'inline';
+                    y.innerHTML = 'Read Less';
+                }
+                else{
+                    x.style.display = 'none';
+                    y.innerHTML = 'Read More';
+                }
+            }
+        </script>
+    </body>
+</html>

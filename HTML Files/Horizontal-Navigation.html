@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Lists</title>
+        <style>
+            body{
+                margin: 0px;
+            }
+            ul{
+                display: inline;
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+                position: fixed;
+                top: 0px;
+                border: 1px solid lightgrey;
+                width: 100%;
+            }
+            li{
+                float: left;
+            }
+            li a{
+                text-decoration: none;
+                color: black;
+                padding: 10px 12px;
+                display: block;
+                font-size: 20px;
+                background-color: #dfdfdf;
+                text-align: center;
+            }
+            li:hover a{
+                background-color: lightgray;
+            }
+            a.active{
+                background-color: lightgreen;
+            }
+             
+        </style>
+    </head>
+    <body>
+       <ul>
+           <li><a class="active" href="#home">Home</a></li>
+           <li><a href="#news">News</a></li>
+           <li><a href="#about">About Us</a></li>
+           <li><a href="#contact">Contact</a></li>
+       </ul>
+     
+      
+    </body>
+</html>

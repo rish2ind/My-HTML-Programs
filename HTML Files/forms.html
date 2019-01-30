@@ -1,0 +1,98 @@
+<html>
+<head>
+    <title>Forms</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: #f1f1f1;
+            font-family: sans-serif;
+        }   
+        h2{
+            text-align: center;
+            position: relative;
+            top: 18%;
+            color: yellowgreen;
+            font-size: 28px;
+            text-shadow: 0px 2px 5px rgba(0,250,0,0.4)
+        }
+        #Form{
+            box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.2);
+            width: 50%;
+            height: 50%;
+            position: relative;
+            top: 100px;
+            margin: 0 auto;
+            padding: 12px 18px;
+            background-color: #74bfea;
+            opacity: .6;
+            border-radius: 5px;
+        }
+        #form:hover{
+            opacity: 1;
+        }
+        lable{
+            font-size: 18px;
+            padding: 2px;
+        }   
+        input{
+            font-size: 15px;
+            text-align: justify;
+            box-sizing: border-box;
+        }    
+        input:hover{
+            box-shadow: 0px 2px 5px 1px rgba(0,0,255,0.2);
+            background-color: #a3e4f2;
+            color: tomato;
+            width: 250px;
+            
+        }  
+        .submit{
+            margin: 0 auto;
+            border: 2px solid lightblue;
+            border-radius: 4px;
+        }
+        .text{
+            text-align: center;
+            width: 150px;
+            transition: width 2s;
+            border: none;
+            padding: 6px 8px;
+        }
+    </style>
+    </head>
+    <body>
+       <h2>Login Page</h2>
+        <form id="Form" action="process.php" method="post">
+           <p>
+            <lable for="Name">Name</lable>
+                <input class="text" name="text" type="text" placeholder="Enter Name" required="">
+            </p>
+            <p>
+        <lable for="Email">Email</lable>
+                <input class="text" name="email" type="email" placeholder="Enter Email" required="">
+        </p>
+        <p>
+        <lable for="password">Password</lable>
+                <input class="text" name="password" type="password" placeholder="Enter Password" required="">
+                </p><p>
+        <lable for="country">Country</lable>
+        <select name="country" id="country">        <option value="Ind" title="Select your Country">India</option>
+             <option value="Aus">Australia</option>
+             <option value="UAE">UAE</option>
+             <option value="Japan">Japan</option>     </select>
+            </p>            
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" >
+            <p>Female
+                <input type= "radio" name="gender" id="female" value="female">
+            </p>
+        <p>
+                <input id="file" name="image" type="file">
+        </p>
+        <p>
+            <input class="submit" name="submit" type="submit">
+        </p>
+        </form>   
+    </body>
+</html>
